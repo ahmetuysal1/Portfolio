@@ -18,11 +18,15 @@
         placeholder="Your name" required
       />
       @if (!name.valid && name.touched && !name.disabled) {
+        <div class="image_position">
         <span class="error">{{ 'contact.formName' | translate }}</span>
         <img class="massage_image"  src="./../../../assets/img/contact/Vector.png" alt="attention_image">
+        </div>
       }
       @if (name.valid && name.touched && !name.disabled) {
+        <div class="contact_position">
         <img class="contact_image"  src="./../../../assets/img/contact/Frame.png" alt="check_image">
+        </div>
       }
       
       <input #email="ngModel" [(ngModel)]="contactData.email"
@@ -32,11 +36,15 @@
         placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-z0-9.\-]+\.[a-zA-Z]{2,4}$"
       />
       @if (!email.valid && email.touched && !email.disabled) {
+        <div class="image_position">
         <span class="error">{{ 'contact.formEmail' | translate }}</span>
         <img class="massage_image" src="./../../../assets/img/contact/Vector.png" alt="attention_image">
+        </div>
       }
       @if (email.valid && email.touched && !email.disabled) {
+        <div class="contact_position">
         <img class="contact_image"  src="./../../../assets/img/contact/Frame.png" alt="check_image">
+        </div>
       }
 
       <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message"
@@ -46,11 +54,15 @@
         style="height: 200px" required
       ></textarea>
       @if (!message.valid && message.touched && !message.disabled) {
+        <div class="image_position">
         <span class="error">{{ 'contact.formMessage' | translate }}</span>
         <img class="massage_image"  src="./../../../assets/img/contact/Vector.png" alt="attention_image">
+        </div>
       }
       @if (message.valid && message.touched && !message.disabled) {
+        <div class="contact_position">
         <img class="contact_image"  src="./../../../assets/img/contact/Frame.png" alt="check_image">
+        </div>
       }
 
       <div class="privacy_policy">
@@ -58,7 +70,7 @@
       </div>
       <div class="button_center">
         @if (contactForm.valid && privacyPolicyChecked) {
-          <button>Sey Hello!</button>} @else {
+          <button class="button_enabled">Sey Hello!</button>} @else {
           <button class="button_disbaled">
             Sey Hello!</button
           >}

@@ -20,8 +20,8 @@
                 <h4>{{ project.title }}</h4>
                 <span>{{ project.description | translate }}</span>
                 <div class="buttons">
-                    <button class="live_test">Live Test</button>
-                    <button>{{ project.projectUrl }}</button>
+                    <a href="{{ project.projectLink }}" target="_blank"><button class="live_test">Live Test</button></a>
+                    <a href="{{ project.projectGit }}" target="_blank"><button>GitHub</button></a>
                 </div>
             </div>
         </div>

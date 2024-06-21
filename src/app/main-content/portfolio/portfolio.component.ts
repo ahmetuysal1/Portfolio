@@ -18,7 +18,8 @@ export class PortfolioComponent {
     name: string;
     title: string;
     description: string;
-    projectUrl: string;
+    projectGit: string;
+    projectLink: string;
     isRowReverse: boolean;
   } [] = [
     {
@@ -26,7 +27,8 @@ export class PortfolioComponent {
       name: 'Join',
       title: 'JavaScript | HTML | CSS',
       description: 'project.projectJoin',
-      projectUrl: 'Github',
+      projectGit: 'https://github.com/ahmetuysal1/Join',
+      projectLink: 'https://join.ahmet-uysal.de/',
       isRowReverse: false,
     },
 
@@ -35,7 +37,8 @@ export class PortfolioComponent {
       name: 'El Pollo Loco',
       title: 'JavaScript | HTML | CSS',
       description: 'project.projectPolloLoco',
-      projectUrl: 'Github',
+      projectGit: 'https://github.com/ahmetuysal1/el-pollo-loco',
+      projectLink: 'https://el-pollo-loco.ahmet-uysal.de/',
       isRowReverse: true,
     },
 
@@ -44,7 +47,8 @@ export class PortfolioComponent {
       name: 'Pokédex',
       title: 'JavaScript | HTML | CSS | API ',
       description: 'project.projectPokèdex',
-      projectUrl: 'Github',
+      projectGit: 'https://github.com/ahmetuysal1/Pok-dex',
+      projectLink: 'https://pokedex.ahmet-uysal.de/',
       isRowReverse: false,
     },
   ]
