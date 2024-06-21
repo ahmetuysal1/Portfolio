@@ -1,0 +1,39 @@
+.bg_container {
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
+}
+
+.privacy_policy_container {
+    max-width: 1440px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.overflow_scroll_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.bg_img {
+    position: absolute;
+    z-index: 1;
+    top: -75px;
+    left: -30px;
+    width: 300px;
+}
+
+@media(max-width: 850px) {
+
+    .background_img {
+        top: -100px;
+        left: -120px;
+    }
+}

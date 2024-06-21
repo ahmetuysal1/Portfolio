@@ -1,0 +1,32 @@
+<nav>
+    <img src="./../../../assets/img/logo_header.svg" alt="logo">
+    <div class="links">
+        <a href="#aboutMe">{{'header.aboutMe' | translate}}</a>
+        <a href="#mySkills">{{'header.skillSet' | translate}}</a>
+        <a href="#portfolio">{{'header.myWork' | translate}}</a>
+        <span (click)="translate.switchLanguage('de')">DE</span>
+        <span (click)="translate.switchLanguage('en')">EN</span>
+    </div>
+
+    <div class="burger_menu">
+        <img src="./../../../assets/img/burger_menu.png" alt="burger_menu" (click)="toggleMenu()">
+    </div>
+</nav>
+
+<div class="hidden_menu" [class.d-none]="burgerMenu === false" (click)="toggleMenu()">
+    <div class="hidden_menu_left">
+        <img src="./../../../assets/img/logo.png" alt="logo">
+        <img class="close" src="./../../../assets/img/close.png" alt="close_icon">
+    </div>
+
+    <div class="hidden_menu_right">
+        <div class="burger_menu_links">
+            <a href="#aboutMe">{{'header.aboutMe' | translate}}</a>
+            <a href="#mySkills">{{'header.skillSet' | translate}}</a>
+            <a href="#portfolio">{{'header.myWork' | translate}}</a>
+            <a href="#contact">{{'header.contact' | translate}}</a>
+            <span (click)="translate.switchLanguage('de')">DE</span>
+            <span (click)="translate.switchLanguage('en')">EN</span>
+        </div>
+    </div>
+</div>

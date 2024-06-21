@@ -1,0 +1,252 @@
+.above_the_fold {
+    display: flex;
+    max-width: 1440px;
+    height: calc(100vh - 117px);
+    background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
+}
+
+.blue_circle {
+    position: absolute;
+    z-index: 2;
+    top: -71px;
+}
+
+.profile_img {
+    margin-top: 115px;
+    margin-left: 32px;
+    height: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile_left {
+    width: 50%;
+}
+
+.profile_right {
+    position: relative;
+    z-index: 5;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 48px;
+    color: #5988FF;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.frontend {
+    color: #5988FF;
+    font-family: 'Baloo 2';
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 153.6px;
+    letter-spacing: -2.5px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.developer {
+    color: #5988FF;
+    font-family: 'Baloo 2';
+    font-weight: 700;
+    font-size: 118px;
+    line-height: 141.6px;
+    letter-spacing: -2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h3 {
+    color: #5988FF;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27.6px;
+}
+
+.blue_perpendicular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 151px;
+    left: 200px;
+}
+
+.social {
+    display: flex;
+}
+
+.social_media{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    left: 400px;
+    top: 390px;
+    height: 200px;
+
+    >a {
+        >img {
+            transition: transform 0.2s ease;
+            cursor: pointer;
+
+            &:hover {
+                transform: translateX(-10px);
+            }
+        }
+    }
+}
+
+.blue_circle_middle {
+    width: 206px;
+    height: 206px;
+}
+
+.blue_circle_position_middle {
+    position: relative;
+    right: 55%;
+    top: 88%;
+    z-index: 4;
+    height: 209px;
+}
+
+.blue_circle_small{
+    width: 82px;
+    height: 82px;
+}
+
+.blue_circle_position_small {
+    position: relative;
+    height: 85px;
+    top: 110%;
+    right: 39%;
+}
+
+@media (max-width: 1210px) {
+    .profile_img {
+        height: 600px;
+        margin-top: 315px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .social {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    .profile_left {
+        width: 5%;
+    }
+
+    .frontend {
+        color: #FFFFFF;
+    }
+
+    .developer {
+        color: #FFFFFF;
+    }
+
+    h2 {
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 720px) {
+    .blue_circle {
+        width: 100%;
+        height: 800px;
+    }
+}
+
+@media (max-width: 660px) {
+    .profile_img {
+        width: 400px;
+        margin-top: 315px;
+        margin-left: 0;
+        object-fit: cover;
+    }
+
+    .blue_circle_middle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .blue_circle_position_middle {
+        right: 75%;
+        top: 92%;
+    }
+
+    .blue_circle_position_small {
+        top: 105%;
+        right: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .frontend {
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .developer {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .blue_circle_position_middle {
+        right: 35%; 
+    }
+
+    .blue_circle_position_small {
+        right: 30%;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .frontend {
+        font-size: 55px;
+        line-height: 78px;
+    }
+
+    .developer {
+        font-size: 55px;
+    }
+
+    .blue_circle_position_middle {
+        right: 75%; 
+    }
+
+    .blue_circle_position_small {
+        right: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile_img {
+        width: 300px;
+    }
+    .blue_circle {
+        width: 90%;
+        height: 600px;
+    }
+
+    .blue_circle_middle_position {
+        right: 70%;
+    }
+}
+

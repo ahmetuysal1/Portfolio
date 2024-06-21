@@ -1,0 +1,29 @@
+<section>
+    <div class="blue_circle_middle_position">
+        <img class="blue_circle_middle" src="./../../../assets/img/bg/blue_circle.png" alt="blue_circle">
+    </div>
+    <div class="blue_circle_my_work">
+        <img class="blue_circle" src="./../../../assets/img/bg/blue_circle_my_work.png" alt="blue_circle">
+    </div>
+    <div class="blue_circle_div">
+        <img class="blue_circle_pokédex" src="/../../../assets/img/bg/blue_circle.png" alt="blue_circle">
+    </div>
+    <div>
+        <h1>{{'myWork.myWork' | translate}}</h1>
+        <h2>{{'myWork.explore' | translate}}</h2>
+    </div>
+    @for (project of projects; track $index) {
+        <div class="project" [ngClass]="{'rowReverse': project.isRowReverse}">
+            <img class="project_img" src="{{ project.img }}" alt="project_image" />
+            <div class="project_info">
+                <h3>{{ project.name }}</h3>
+                <h4>{{ project.title }}</h4>
+                <span>{{ project.description | translate }}</span>
+                <div class="buttons">
+                    <button class="live_test">Live Test</button>
+                    <button>{{ project.projectUrl }}</button>
+                </div>
+            </div>
+        </div>
+    }
+</section>

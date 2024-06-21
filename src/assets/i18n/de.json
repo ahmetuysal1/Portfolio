@@ -1,0 +1,46 @@
+{
+    "header": {
+    "aboutMe": "Über mich",
+    "skillSet": "Skill set",
+    "myWork": "Meine Arbeit",
+    "contact": "Kontakt"
+    },
+
+    "aft": {
+        "name": "Hallo! Ich bin Ahmet",
+        "frontend": "Frontend",
+        "developer": "Entwickler"
+    },
+
+    "about": {
+        "work": "Lassen Sie uns zusammen arbeiten",
+        "iam":"Ich bin ein Frontend Entwickler aus Unna. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Tat umzusetzen. Ich freue mich darauf, meine Karriere als Entwickler mit einer Stelle als Junior-Webentwickler fortzusetzen. Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+        "sendAMessage": "Mein Kontakt"
+    },
+
+    "myWork": {
+        "myWork": "Meine Arbeiten",
+        "explore": "Probieren Sie meine neuesten Webentwicklungsprojekte aus und schauen Sie sich deren Code an."
+    },
+
+    "project": {
+        "projectJoin": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "projectPolloLoco": "Ein Jump & Run Spiel, das auf einem objektorientierten Ansatz beruht. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+        "projectPokèdex": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
+    },
+
+    "contact": {
+        "contact": "Kontakt",
+        "contactMe": "Ein Problem zu beheben?",
+        "projects": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert von Ihnen zu hören, Ihre Ideen zu kennen und zu Ihren Projekte mit meiner Arbeit beizutragen.",
+        "need": "Brauchen Sie einen Frontend-Entwickler? ",
+        "me": "Kontaktieren Sie mich!",
+        "formName": "Ihr Name ist erforderlich",
+        "formEmail": "Ihre Email ist erforderlich",
+        "formMessage": "Ihre Nachricht ist leer",
+        "checkbox": "Ich habe die ",
+        "privacyPolicy": "Datenschutzbestimmungen",
+        "checkBox": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+    }
+
+}

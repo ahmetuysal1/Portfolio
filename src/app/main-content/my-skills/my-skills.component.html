@@ -1,0 +1,14 @@
+<div class="skills_bg">
+  <h1>Skill set</h1>
+  <div class="skills_wrap">
+    @for (skill of skills; track $index) {
+    <div class="skills_icon">
+      <img class="skills_icon_img" src="{{ skill.img }}" alt="skills_icon" />
+      <h3>{{ skill.name }}</h3>
+    </div>
+    }
+  </div>
+  <div class="blue_circle_small_position">
+    <img class="blue_circle_small" src="./../../../assets/img/bg/blue_circle.png" alt="blue_circle">
+</div>
+</div>

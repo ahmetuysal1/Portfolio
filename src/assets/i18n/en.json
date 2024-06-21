@@ -1,0 +1,46 @@
+{
+    "header": {
+    "aboutMe": "About me",
+    "skillSet": "Skill set",
+    "myWork": "My Work",
+    "contact": "Contact"
+    },
+
+    "aft": {
+    "name": "Hello! I am Ahmet",
+    "frontend": "Frontend",
+    "developer": "Developer"
+    },
+
+    "about": {
+    "work": "Let's work together",
+    "iam": "I am a Front-end developer based in Unna, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position. If you think I’d be a good match for your projects, contact me!",
+    "sendAMessage": "Send a message"    
+    },
+
+    "myWork": {
+        "myWork": "My Work",
+        "explore": "Explore a selection of my work here - Interact with \n projects to see my skills in action"
+    },
+
+    "project": {
+        "projectJoin": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users andcategories",
+        "projectPolloLoco": "Jump, run and throw game basted on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "projectPokèdex": "Based on the PokéAPI a simple libary that provides and catalogues pokemon information."
+    },
+
+    "contact": {
+        "contact": "Contact",
+        "contactMe": "Got a problem to solve?",
+        "projects": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "need": "Need a Frontend developer? ",
+        "me": "Contact me!",
+        "formName": "Your name is required",
+        "formEmail": "Your email is required",
+        "formMessage": "Your message is empty",
+        "checkbox": "I´ve read the ",
+        "privacyPolicy": "privacy policy",
+        "checkBox": "and agree to the processing of my data as outlind."
+
+    }
+}
