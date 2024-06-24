@@ -101,6 +101,9 @@ input[type=text], [type=email], select, textarea {
 
   .button_enabled { 
     cursor: pointer;
+    border: 2px solid #5988FF;
+    color: #5988FF;
+    border-radius: 10px;
   }
 
   .button_disbaled {
@@ -182,12 +185,15 @@ h5{
   display: flex;
   justify-content: end;
   width: 100%;
+  height: 0px;
 }
 
 .contact_image {
   position: relative;
   bottom: 50px;
   right: 10px;
+  width: 26px;
+  height: 26px;
 }
 
 .div {
@@ -203,7 +209,7 @@ h5{
 
   .go_up {
     position: relative;
-    top: 189px;
+    top: 240px;
   }
 
   .container {
@@ -211,7 +217,7 @@ h5{
   }
 
   .contact_info {
-    height: 200px;
+    height: 230px;
   }
 
   .blue_circle {
@@ -253,10 +259,10 @@ h5{
   }
 
   .button_disbaled {
-    padding: 13px 24px 13px 24px;
+    padding: 10px 20px 10px 20px;
   }
 
   .button_enabled {
-    padding: 13px 24px 13px 24px;
+    padding: 10px 20px 10px 20px;
   }
 }

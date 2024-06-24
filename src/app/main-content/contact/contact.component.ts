@@ -27,7 +27,7 @@ export class ContactComponent {
     checkbox: false,
   }
 
-  privacyPolicyChecked: false | undefined;
+  privacyPolicyChecked: boolean = false;
 
   mailTest = true;
 

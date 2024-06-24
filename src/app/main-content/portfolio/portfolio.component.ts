@@ -18,6 +18,7 @@ export class PortfolioComponent {
     name: string;
     title: string;
     description: string;
+    description1: string;
     projectGit: string;
     projectLink: string;
     isRowReverse: boolean;
@@ -25,8 +26,9 @@ export class PortfolioComponent {
     {
       img: './../../../assets/img/project/join_.png',
       name: 'Join',
-      title: 'JavaScript | HTML | CSS',
+      title: 'Firebase | JavaScript | HTML | CSS',
       description: 'project.projectJoin',
+      description1: 'project.projectJoin1',
       projectGit: 'https://github.com/ahmetuysal1/Join',
       projectLink: 'https://join.ahmet-uysal.de/',
       isRowReverse: false,
@@ -35,8 +37,9 @@ export class PortfolioComponent {
     {
       img: './../../../assets/img/project/el_pollo_loco.png',
       name: 'El Pollo Loco',
-      title: 'JavaScript | HTML | CSS',
+      title: 'JavaScript (OOP) | HTML | CSS',
       description: 'project.projectPolloLoco',
+      description1: 'project.projectPolloLoco1',
       projectGit: 'https://github.com/ahmetuysal1/el-pollo-loco',
       projectLink: 'https://el-pollo-loco.ahmet-uysal.de/',
       isRowReverse: true,
@@ -47,6 +50,7 @@ export class PortfolioComponent {
       name: 'Pokédex',
       title: 'JavaScript | HTML | CSS | API ',
       description: 'project.projectPokèdex',
+      description1: 'project.projectPokèdex1',
       projectGit: 'https://github.com/ahmetuysal1/Pok-dex',
       projectLink: 'https://pokedex.ahmet-uysal.de/',
       isRowReverse: false,

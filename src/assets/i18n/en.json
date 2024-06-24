@@ -14,7 +14,10 @@
 
     "about": {
     "work": "Let's work together",
-    "iam": "I am a Front-end developer based in Unna, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position. If you think I’d be a good match for your projects, contact me!",
+    "iam": "I am a Front-end developer based in Unna, Germany. ",
+    "iam1": "I enjoy helping designers and companies bring their ideas into real life.",
+    "iam2": "I am looking forward to continuing my developer career with a job in a junior web developer position.",
+    "iam3": "If you think I’d be a good match for your projects, contact me!",
     "sendAMessage": "Send a message"    
     },
 
@@ -24,9 +27,12 @@
     },
 
     "project": {
-        "projectJoin": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users andcategories",
-        "projectPolloLoco": "Jump, run and throw game basted on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "projectPokèdex": "Based on the PokéAPI a simple libary that provides and catalogues pokemon information."
+        "projectJoin": "Task manager inspired by the Kanban System.",
+        "projectJoin1": "Create and organize tasks using drag and drop functions, assign users andcategories",
+        "projectPolloLoco": "Jump, run and throw game basted on object-oriented approach.",
+        "projectPolloLoco1": "Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "projectPokèdex": "Based on the PokéAPI a simple libary that provides",
+        "projectPokèdex1":"and catalogues pokemon information."
     },
 
     "contact": {
