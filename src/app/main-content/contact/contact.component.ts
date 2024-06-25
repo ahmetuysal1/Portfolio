@@ -29,10 +29,10 @@ export class ContactComponent {
 
   privacyPolicyChecked: boolean = false;
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://ahmet-uysal.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -49,6 +49,7 @@ export class ContactComponent {
           next: (response) => {
 
             ngForm.resetForm();
+            this.checkUp();
           },
           error: (error) => {
             console.error(error);
@@ -58,6 +59,13 @@ export class ContactComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log('mail gesendet', this.contactData);
       ngForm.resetForm();
+      this.checkUp();
     }
   }
+
+  checkUp() {
+    this.privacyPolicyChecked = !this.privacyPolicyChecked
+  }
 }
+
+

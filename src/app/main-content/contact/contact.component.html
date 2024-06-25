@@ -66,14 +66,15 @@
       }
 
       <div class="privacy_policy">
-        <input class="checkbox" type="checkbox"><h5>{{ 'contact.checkbox' | translate }}<a [routerLink]="['/privacy-policy']">{{ 'contact.privacyPolicy' | translate }}</a> {{ 'contact.checkBox' | translate }}</h5>
+        <input (click)="checkUp()" name="checkbox" class="checkbox" type="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox">
+        <h5>{{ 'contact.checkbox' | translate }}<a [routerLink]="['/privacy-policy']">{{ 'contact.privacyPolicy' | translate }}</a> {{ 'contact.checkBox' | translate }}</h5>
       </div>
       <div class="button_center">
-        @if (contactForm.valid && privacyPolicyChecked) {
-          <button class="button_enabled">Say Hello!</button>} @else {
-          <button class="button_disbaled">
-            Say Hello!</button
-          >}
+        <button 
+          [ngClass]="{'button_enabled': contactForm.valid && privacyPolicyChecked, 'button_disabled': !(contactForm.valid && privacyPolicyChecked)}" 
+          [disabled]="!(contactForm.valid && privacyPolicyChecked)">
+          Say Hello!
+</button>
       </div>
     </form>
   </div>
