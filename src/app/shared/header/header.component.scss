@@ -1,13 +1,19 @@
 nav {
   max-width: 1440px;
-  width: 85%;
   height: 117px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 3;
-  padding-left: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
 }
 
 span {
@@ -99,6 +105,12 @@ span {
   nav {
     padding-left: 25px;
   }
+
+  .header {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
   .links {
     display: none;
   }

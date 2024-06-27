@@ -1,86 +1,149 @@
 <section>
-<h1>{{ 'contact.contact' | translate }}</h1>
-<div class="contact_bg">
-  <div class="contact_info">
-    <h2>{{ 'contact.contactMe' | translate }}</h2>
-    <h3>{{ 'contact.projects' | translate }}</h3>
-    <h4>{{ 'contact.need' | translate }}<span>{{ 'contact.me' | translate }}</span></h4>
-    <img class="blue_circle" src="./../../../assets/img/bg/blue_circle.png" alt="blue_circle">
-    <div class="go_up"><a class="go_up_link" href="#header"></a></div>
+  <div>
+    <h1>{{ "contact.contact" | translate }}</h1>
   </div>
-
-  <div class="container">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      <input #name="ngModel" class="input_name" [(ngModel)]="contactData.name"
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Your name" required
+  <div class="contact_bg">
+    <div class="contact_info">
+      <h2>{{ "contact.contactMe" | translate }}</h2>
+      <h3>{{ "contact.projects" | translate }}</h3>
+      <h4>
+        {{ "contact.need" | translate
+        }}<span>{{ "contact.me" | translate }}</span>
+      </h4>
+      <img
+        class="blue_circle"
+        src="./../../../assets/img/bg/blue_circle.png"
+        alt="blue_circle"
       />
-      @if (!name.valid && name.touched && !name.disabled) {
+      <div class="go_up"><a class="go_up_link" href="#header"></a></div>
+    </div>
+
+    <div class="container">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <input
+          #name="ngModel"
+          class="input_name"
+          [(ngModel)]="contactData.name"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+        @if (!name.valid && name.touched && !name.disabled) {
         <div class="image_position">
-        <span class="error">{{ 'contact.formName' | translate }}</span>
-        <img class="massage_image"  src="./../../../assets/img/contact/Vector.png" alt="attention_image">
+          <span class="error">{{ "contact.formName" | translate }}</span>
+          <img
+            class="massage_image"
+            src="./../../../assets/img/contact/Vector.png"
+            alt="attention_image"
+          />
         </div>
-      }
-      @if (name.valid && name.touched && !name.disabled) {
+        } @if (name.valid && name.touched && !name.disabled) {
         <div class="contact_position">
-        <img class="contact_image"  src="./../../../assets/img/contact/Frame.png" alt="check_image">
+          <img
+            class="contact_image"
+            src="./../../../assets/img/contact/Frame.png"
+            alt="check_image"
+          />
         </div>
-      }
-      
-      <input #email="ngModel" [(ngModel)]="contactData.email"
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-z0-9.\-]+\.[a-zA-Z]{2,4}$"
+        }
+
+        <input
+          #email="ngModel"
+          [(ngModel)]="contactData.email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-z0-9.\-]+\.[a-zA-Z]{2,4}$"
+        />
+        @if (!email.valid && email.touched && !email.disabled) {
+        <div class="image_position">
+          <span class="error">{{ "contact.formEmail" | translate }}</span>
+          <img
+            class="massage_image"
+            src="./../../../assets/img/contact/Vector.png"
+            alt="attention_image"
+          />
+        </div>
+        } @if (email.valid && email.touched && !email.disabled) {
+        <div class="contact_position">
+          <img
+            class="contact_image"
+            src="./../../../assets/img/contact/Frame.png"
+            alt="check_image"
+          />
+        </div>
+        }
+
+        <textarea
+          #message="ngModel"
+          minlength="4"
+          [(ngModel)]="contactData.message"
+          id="message"
+          name="message"
+          placeholder="Your message"
+          style="height: 200px"
+          required
+        ></textarea>
+        @if (!message.valid && message.touched && !message.disabled) {
+        <div class="image_position">
+          <span class="error">{{ "contact.formMessage" | translate }}</span>
+          <img
+            class="massage_image"
+            src="./../../../assets/img/contact/Vector.png"
+            alt="attention_image"
+          />
+        </div>
+        } @if (message.valid && message.touched && !message.disabled) {
+        <div class="contact_position">
+          <img
+            class="contact_image"
+            src="./../../../assets/img/contact/Frame.png"
+            alt="check_image"
+          />
+        </div>
+        }
+
+        <div class="privacy_policy">
+          <input
+            (click)="checkUp()"
+            name="checkbox"
+            class="checkbox"
+            type="checkbox"
+            #checkbox="ngModel"
+            [(ngModel)]="contactData.checkbox"
+          />
+          <h5>
+            {{ "contact.checkbox" | translate
+            }}<a [routerLink]="['/privacy-policy']">{{
+              "contact.privacyPolicy" | translate
+            }}</a>
+            {{ "contact.checkBox" | translate }}
+          </h5>
+        </div>
+        <div class="button_center">
+          <button
+            [ngClass]="{
+              button_enabled: contactForm.valid && privacyPolicyChecked,
+              button_disabled: !(contactForm.valid && privacyPolicyChecked)
+            }"
+            [disabled]="!(contactForm.valid && privacyPolicyChecked)"
+          >
+            Say Hello!
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="blue_circle_small_position">
+      <img
+        class="blue_circle_small"
+        src="./../../../assets/img/bg/blue_circle.png"
+        alt="blue_circle"
       />
-      @if (!email.valid && email.touched && !email.disabled) {
-        <div class="image_position">
-        <span class="error">{{ 'contact.formEmail' | translate }}</span>
-        <img class="massage_image" src="./../../../assets/img/contact/Vector.png" alt="attention_image">
-        </div>
-      }
-      @if (email.valid && email.touched && !email.disabled) {
-        <div class="contact_position">
-        <img class="contact_image"  src="./../../../assets/img/contact/Frame.png" alt="check_image">
-        </div>
-      }
-
-      <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message"
-        id="message"
-        name="message"
-        placeholder="Your message"
-        style="height: 200px" required
-      ></textarea>
-      @if (!message.valid && message.touched && !message.disabled) {
-        <div class="image_position">
-        <span class="error">{{ 'contact.formMessage' | translate }}</span>
-        <img class="massage_image"  src="./../../../assets/img/contact/Vector.png" alt="attention_image">
-        </div>
-      }
-      @if (message.valid && message.touched && !message.disabled) {
-        <div class="contact_position">
-        <img class="contact_image"  src="./../../../assets/img/contact/Frame.png" alt="check_image">
-        </div>
-      }
-
-      <div class="privacy_policy">
-        <input (click)="checkUp()" name="checkbox" class="checkbox" type="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox">
-        <h5>{{ 'contact.checkbox' | translate }}<a [routerLink]="['/privacy-policy']">{{ 'contact.privacyPolicy' | translate }}</a> {{ 'contact.checkBox' | translate }}</h5>
-      </div>
-      <div class="button_center">
-        <button 
-          [ngClass]="{'button_enabled': contactForm.valid && privacyPolicyChecked, 'button_disabled': !(contactForm.valid && privacyPolicyChecked)}" 
-          [disabled]="!(contactForm.valid && privacyPolicyChecked)">
-          Say Hello!
-</button>
-      </div>
-    </form>
+    </div>
   </div>
-
-  <div class="blue_circle_small_position">
-    <img class="blue_circle_small" src="./../../../assets/img/bg/blue_circle.png" alt="blue_circle">
-  </div>
-</div>
 </section>

@@ -1,4 +1,5 @@
 <nav>
+    <div class="header">
     <img src="./../../../assets/img/logo_header.svg" alt="logo">
     <div class="links">
         <a href="#aboutMe">{{'header.aboutMe' | translate}}</a>
@@ -11,6 +12,7 @@
     <div class="burger_menu">
         <img src="./../../../assets/img/burger_menu.png" alt="burger_menu" (click)="toggleMenu()">
     </div>
+</div>
 </nav>
 
 <div class="hidden_menu" [class.d-none]="burgerMenu === false" (click)="toggleMenu()">

@@ -5,14 +5,13 @@ footer {
     justify-content: center;
     background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
     height: 291px;
-    max-width: 1440px;
 }
 
 .display_flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 1440px;
 }
 
 h2 {
@@ -51,9 +50,10 @@ a {
     width: 30px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1470px) {
     .display_flex {
       flex-direction: column;
+      width: auto;
     }
 
     h2 {
